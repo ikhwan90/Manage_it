@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context=".DietManagers.AddPlanActivity">
+<!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_diet_add_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    />
+
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:background="@drawable/shape_oval"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/foodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorWhite"
+            android:hint="@string/Enter_here"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/indi"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColorHint="@color/colorWhite"
+            android:layout_below="@id/foodname"
+            android:layout_marginTop="20dp"
+            android:hint="@string/Ingredients"
+            android:lineSpacingMultiplier="2"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_oval"
+            android:text="@string/Add" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
